@@ -263,22 +263,22 @@ $lista_equipo=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                 Contacto
             </div>
             <div class="card-body">
-                <form id="contactForm">
+                <form id="contactForm" method="POST" action="procesar_formulario.php">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre completo</label>
-                        <input class="form-control" id="nombre" type="text" placeholder="Nombre completo" />
+                        <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Nombre completo" />
                     </div>
                     <div class="mb-3">
                         <label for="correo" class="form-label">Correo electrónico</label>
-                        <input class="form-control" id="correo" type="text" placeholder="ejemplo@gmail.com" />
+                        <input class="form-control" id="correo" name="correo" type="text" placeholder="ejemplo@gmail.com" />
                     </div>
                     <div class="mb-3">
                         <label for="numero" class="form-label">Número telefónico</label>
-                        <input class="form-control" id="numero" type="text" placeholder="Número telefónico" />
+                        <input class="form-control" id="numero" name="numero" type="text" placeholder="Número telefónico" />
                     </div>
                     <div class="mb-3">
                         <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" type="text" placeholder="¿Qué tienes para decirnos?"></textarea>
+                        <textarea class="form-control" id="mensaje" name="mensaje" type="text" placeholder="¿Qué tienes para decirnos?"></textarea>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-success">Enviar mensaje</button>
@@ -291,6 +291,7 @@ $lista_equipo=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 </section>
+
 
         <!-- Footer-->
         <footer class="footer py-4">
