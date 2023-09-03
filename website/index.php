@@ -79,7 +79,7 @@ $lista_equipo=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="http://website-production-5b02.up.railway.app/admin/">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://website-production-5b02.up.railway.app/admin/login.php">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Gimnasios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Coachs</a></li>
@@ -292,8 +292,7 @@ $lista_equipo=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
-                                <textarea class="form-control" id="mensaje" type="text" placeholder="Que tienes para decirnos!" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <textarea class="form-control" for="mensaje" name="correo" id="mensaje" type="text" placeholder="Que tienes para decirnos!"></textarea>
                             </div>
                         </div>
                     </div>
@@ -313,9 +312,8 @@ $lista_equipo=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                     <!---->
                     <!-- This is what your users will see when there is-->
                     <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar mensaje.</button></div>
+                    <div class="text-center"><button type="submit" class="btn btn-success">Enviar mensaje.</button></div>
                 </form>
             </div>
         </section>
