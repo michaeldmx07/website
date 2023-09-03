@@ -42,6 +42,15 @@ if($_POST){
         crossorigin="anonymous">
   <style>
     body {
+    background-image: url('../../assets/img/candado.fjif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Esto asegura que la imagen permanezca fija mientras se desplaza la página */
+    background-color: #f8f9fa; /* Un color de fondo de respaldo en caso de que la imagen no se cargue */
+    }
+
+    body {
       background-color: #f8f9fa;
     }
     .card {
