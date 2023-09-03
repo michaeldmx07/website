@@ -50,9 +50,6 @@ if($_POST){
     background-color: #f8f9fa; /* Un color de fondo de respaldo en caso de que la imagen no se cargue */
     }
 
-    body {
-      background-color: #f8f9fa;
-    }
     .card {
       border: none;
       border-radius: 10px;
