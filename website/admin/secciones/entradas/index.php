@@ -13,8 +13,8 @@ if(isset($_GET['txtID'])){
     $registro_imagen=$sentencia->fetch(PDO::FETCH_LAZY);
 
     if(isset($registro_imagen["imagen"])){
-        if(file_exists("../../../assets/img/".$registro_imagen["imagen"])){
-            unlink("../../../assets/img/".$registro_imagen["imagen"]);
+        if(file_exists("../../../assets/img/about/".$registro_imagen["imagen"])){
+            unlink("../../../assets/img/about/".$registro_imagen["imagen"]);
         }
     }
 

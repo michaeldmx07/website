@@ -58,7 +58,7 @@ if($_POST){
       $nombre_archivo_imagen=($imagen!="")? $fecha_imagen->getTimestamp()."_".$imagen:"";
       $tmp_imagen=$_FILES["imagen"]["tmp_name"];
       
-        move_uploaded_file($tmp_imagen,"../../../assets/img/".$nombre_archivo_imagen);
+        move_uploaded_file($tmp_imagen,"../../../assets/img/team/".$nombre_archivo_imagen);
       
 
         //Consulta para borrar la imagen a traves del nombre.
@@ -68,8 +68,8 @@ if($_POST){
         $registro_imagen=$sentencia->fetch(PDO::FETCH_LAZY);
     
         if(isset($registro_imagen["imagen"])){
-            if(file_exists("../../../assets/img/".$registro_imagen["imagen"])){
-                unlink("../../../assets/img/".$registro_imagen["imagen"]);
+            if(file_exists("../../../assets/img/team/".$registro_imagen["imagen"])){
+                unlink("../../../assets/img/team/".$registro_imagen["imagen"]);
             }
         }
 
