@@ -42,7 +42,7 @@ if($_POST){
         crossorigin="anonymous">
   <style>
     body {
-    background-image: url('../../assets/img/candado.fjif');
+    background-image: url('../assets/img/candado.jgp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
