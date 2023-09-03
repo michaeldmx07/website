@@ -41,15 +41,14 @@ if($_POST){
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
         crossorigin="anonymous">
   <style>
-    body.hambre {
-    background-image: url('../assets/img/candado.jgp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Esto asegura que la imagen permanezca fija mientras se desplaza la página */
-    background-color: #f8f9fa; /* Un color de fondo de respaldo en caso de que la imagen no se cargue */
+    body {
+      background-image: url('../assets/img/candado.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #f8f9fa;
     }
-
     .card {
       border: none;
       border-radius: 10px;
@@ -70,7 +69,7 @@ if($_POST){
     }
   </style>
 </head>
-<body class="hambre">
+<body>
   <main>
     <div class="container mt-5">
       <div class="row justify-content-center">
