@@ -48,66 +48,60 @@ if($_POST){
   <header>
     <!-- place navbar here -->
   </header>
-  <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-4">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: #f8f9fa;">
 
+<main>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <?php if(isset($mensaje)){ ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <strong><?php echo $mensaje;?></strong>
+                    </div>
+                <?php } ?>
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary text-white">
+                        <h4>Acceso del Administrador</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="usuario">Usuario</label>
+                                <input type="text" class="form-control" name="usuario" id="usuario" placeholder="usuario@ejemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="*********" required>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-4">
-          <br/><br/>
-          <?php if(isset($mensaje)){ ?>
-          <div class="alert alert-danger alert-dismissible fade show" role="alert">
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              <strong><?php echo $mensaje;?></strong>
-            </div>
-<?php } ?>
-          <div class="card">
-            <div class="card-header">
-              Acceso del Administrador
-            </div>
-            <div class="card-body">
-
-            
-            <script>
-              var alertList = document.querySelectorAll('.alert');
-              alertList.forEach(function (alert) {
-                new bootstrap.Alert(alert)
-              })
-            </script>
-            
-
-              
-              <form action="" method="post">
-
-              <div class="mb-3">
-                <label for="usuario" class="form-label">Usuario</label>
-                <input type="text"
-                  class="form-control" name="usuario" id="usuario" aria-describedby="helpId" placeholder="usuario@ejemplo.com">
-              </div>
-
-              <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password"
-                  class="form-control" name="password" id="password" aria-describedby="helpId" placeholder="*********">
-              </div>
-
-
-              <input name="" id="" class="btn btn-primary" type="submit" value="Ingresar">
-
-
-              </form>
-            </div>
-            <div class="card-footer text-muted">
-         
-            </div>
-          </div>
-      
-        </div>
-        
-      </div>
     </div>
-  </main>
+</main>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
   <footer>
     <!-- place footer here -->
   </footer>
