@@ -41,7 +41,7 @@ if($_POST){
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
         crossorigin="anonymous">
   <style>
-    body {
+    body.hambre {
     background-image: url('../assets/img/candado.jgp');
     background-size: cover;
     background-position: center;
@@ -70,7 +70,7 @@ if($_POST){
     }
   </style>
 </head>
-<body>
+<body class="hambre">
   <main>
     <div class="container mt-5">
       <div class="row justify-content-center">
