@@ -263,7 +263,7 @@ $lista_equipo=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                 Contacto
             </div>
             <div class="card-body">
-                <form id="contactForm" method="POST" action="procesar_formulario.php">
+                <form action="" enctype="multipart/form-data" method="post">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre completo</label>
                         <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Nombre completo" />
