@@ -79,7 +79,7 @@ $lista_equipo=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="http://website-production-5b02.up.railway.app/admin/login.php">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://website-production-5b02.up.railway.app/admin/">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Gimnasios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Coachs</a></li>
@@ -255,68 +255,43 @@ $lista_equipo=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                 </div>
             </div>
         </div>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Cuentanos como podemos ayudarte!</h2>
-                    <h3 class="section-subheading text-muted">Un experto se pondra en contacto contigo lo antes posible.</h3>
-                </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="nombre" type="text" placeholder="Nombre completo" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="correo" type="text" placeholder="ejemplo@gmail.com" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="numero" type="text" placeholder="Numero telefonico" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" for="mensaje" name="correo" id="mensaje" type="text" placeholder="Que tienes para decirnos!"></textarea>
-                            </div>
-                        </div>
+<!-- Contact -->
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Contacto
+            </div>
+            <div class="card-body">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input class="form-control" id="nombre" type="text" placeholder="Nombre completo" />
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input class="form-control" id="correo" type="text" placeholder="ejemplo@gmail.com" />
                     </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <!-- Submit Button-->
-                    <div class="text-center"><button type="submit" class="btn btn-success">Enviar mensaje.</button></div>
+                    <div class="mb-3">
+                        <label for="numero" class="form-label">Número telefónico</label>
+                        <input class="form-control" id="numero" type="text" placeholder="Número telefónico" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" type="text" placeholder="¿Qué tienes para decirnos?"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">Enviar mensaje</button>
+                    </div>
                 </form>
             </div>
-        </section>
+            <div class="card-footer text-muted">
+                Un experto se pondrá en contacto contigo lo antes posible.
+            </div>
+        </div>
+    </div>
+</section>
+
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">

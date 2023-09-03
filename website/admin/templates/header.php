@@ -2,7 +2,7 @@
 session_start();
 $url_base = "http://website-production-5b02.up.railway.app/admin/"; 
 if(!isset($_SESSION['usuario'])){
-  header("Location:".$url_base."loin.php");
+  header("Location:".$url_base."login.php");
 }
 ?>
 
