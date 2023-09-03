@@ -15,7 +15,7 @@ if($_POST){
     $nombre_archivo_imagen=($imagen!="")? $fecha_imagen->getTimestamp()."_".$imagen:"";
     $tmp_imagen=$_FILES["imagen"]["tmp_name"];
     if($tmp_imagen!=""){
-      move_uploaded_file($tmp_imagen,"assets/img/".$nombre_archivo_imagen);
+      move_uploaded_file($tmp_imagen,"../../../assets/img/".$nombre_archivo_imagen);
     }
 
 
