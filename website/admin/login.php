@@ -7,7 +7,7 @@ if($_POST){
   $password=(isset($_POST['password']))?$_POST['password']:"";
   
   //Aqui estoy llamando los datos de la base local para mostrar 
-  $sentencia=$conexion ->prepare("SELECT *, count(*) as n_usuario
+  $sentencia=$conexion ->prepare("SELECT *
             FROM `tbl_usuarios`
             WHERE usuario=:usuario
             AND password=:password
