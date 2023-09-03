@@ -20,7 +20,7 @@ if($_POST){
 
   $lista_usuarios=$sentencia->fetch(PDO::FETCH_LAZY);
 
-  if($lista_usuarios['n_usuario']>0){
+  if($lista_usuarios){
     print_r("ACCESO");
     $_SESSION['usuario']=$lista_usuarios['usuario'];
     $_SESSION['logueado']=true;
