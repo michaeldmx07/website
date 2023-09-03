@@ -269,8 +269,8 @@ $lista_equipo=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                         <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Nombre completo" />
                     </div>
                     <div class="mb-3">
-                        <label for="correo" class="form-label">Correo electrónico</label>
-                        <input class="form-control" id="correo" name="correo" type="text" placeholder="ejemplo@gmail.com" />
+                        <label for="correoelectronico" class="form-label">Correo electrónico</label>
+                        <input class="form-control" id="correoelectronico" name="correoelectronico" type="text" placeholder="ejemplo@gmail.com" />
                     </div>
                     <div class="mb-3">
                         <label for="numero" class="form-label">Número telefónico</label>
