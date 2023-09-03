@@ -21,19 +21,13 @@ if($_POST){
   $lista_usuarios=$sentencia->fetch(PDO::FETCH_LAZY);
 
   if($lista_usuarios){
-    print_r("ACCESO");
     $_SESSION['usuario']=$lista_usuarios['usuario'];
     $_SESSION['logueado']=true;
     header("Location:index.php");
   }else{
       $mensaje="Error: El usuario o contraseña no son validos";
   }
-
-
-
-
 }
-
 ?>
 <!doctype html>
 <html lang="es">
