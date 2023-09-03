@@ -73,7 +73,6 @@ $lista_equipo=$sentencia->fetchAll(PDO::FETCH_ASSOC);
             <div class="container">
                 <div class="masthead-subheading">Transforma tu cuerpo, desafía tus límites</div>
                 <div class="masthead-heading text-uppercase">The Titan's Forge Fitness Center</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Conoce mas sobre nosotros.</a>
             </div>
         </header>
 
