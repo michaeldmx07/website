@@ -26,7 +26,7 @@ if($_POST){
     //Esta parte recoge los datos y los guarda en la base de datos <3
     $nombrecompleto=(isset($_POST['nombrecompleto']))?$_POST['nombrecompleto']:"";
     $puesto=(isset($_POST['puesto']))?$_POST['puesto']:"";
-    $urltwitter=(isset($_POST['urltwitter']))?$_POST['urltwiteer']:"";
+    $urltwitter=(isset($_POST['urltwitter']))?$_POST['urltwitter']:"";
     $urlfacebook=(isset($_POST['urlfacebook']))?$_POST['urlfacebook']:"";
     $urllinkedin=(isset($_POST['urllinkedin']))?$_POST['urllinkedin']:"";
 
